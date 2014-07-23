@@ -2,12 +2,26 @@
 // Slides
 
 // Show/hide other slides based on which slide is active.
-@each $slide in title, dcmouyard, final {
+@each $slide in title, dcmouyard, css-guidelines, drupal-8-guidelines, naming-components, markup-components, naming-elements, markup-elements, naming-variants, markup-variants, naming-states, markup-states, final {
   .impress-on-#{$slide} .show-on-#{$slide} {
     opacity: 1;
   }
   .impress-on-#{$slide} .hide-on-#{$slide} {
     opacity: 0;
+  }
+}
+
+// Special styling for Section Headers.
+@each $slide in css-guidelines, control-markup {
+  .impress-on-#{$slide} {
+    @extend %bg-secondary;
+  }
+  ##{$slide} {
+    text-shadow: darken($f1-ash, 20%) 2px 2px;
+
+    .title {
+      margin: 0;
+    }
   }
 }
 
@@ -55,16 +69,9 @@
   }
 }
 
-.impress-on-css-guidelines {
-  @extend %bg-secondary;
-}
-
-#why {
-  text-shadow: darken($f1-ash, 20%) 2px 2px;
-
-  .title {
-    margin: 0;
-  }
+.impress-on-smacss {
+  @extend %picture-background;
+  background-image: url(../img/smacss.jpg);
 }
 
 
