@@ -360,6 +360,11 @@ select {}
 
 small {
   @include adjust-font-size-to($font-size-sm);
+
+  pre {
+    font-size: 63%;
+    line-height: 1.8;
+  }
 }
 
 strong {}

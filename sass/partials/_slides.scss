@@ -2,7 +2,12 @@
 // Slides
 
 // Show/hide other slides based on which slide is active.
-@each $slide in title, dcmouyard, css-guidelines, drupal-8-guidelines, naming-components, markup-components, naming-elements, markup-elements, naming-variants, markup-variants, naming-states, markup-states, final {
+@each $slide in title, dcmouyard, css-guidelines, drupal-8-guidelines, naming-components,
+                markup-components, naming-elements, markup-elements, naming-variants, markup-variants,
+                naming-states, markup-states, control-markup, template-files, template-variables-renders,
+                preprocess-functions, preprocess-function-names, attributes-array,
+                title-attributes-array, classes-array, render-array-attributes, theme-functions,
+                theme-breadcrumb, theme-feed-icon, new-theme, clean-markup-module, final {
   .impress-on-#{$slide} .show-on-#{$slide} {
     opacity: 1;
   }
@@ -72,6 +77,54 @@
 .impress-on-smacss {
   @extend %picture-background;
   background-image: url(../img/smacss.jpg);
+}
+
+.impress-on-clean-markup-blocks {
+  @extend %picture-background;
+  background-image: url(../img/clean-markup-blocks.jpg);
+  background-size: contain;
+}
+
+.impress-on-clean-markup-panels {
+  @extend %picture-background;
+  background-image: url(../img/clean-markup-panels.jpg);
+  background-size: contain;
+}
+
+.impress-on-manage-display {
+  @extend %picture-background;
+  background-image: url(../img/manage-display.jpg);
+  background-size: contain;
+}
+
+.impress-on-field-display {
+  @extend %picture-background;
+  background-image: url(../img/field-display.jpg);
+  background-size: contain;
+}
+
+.impress-on-with-ds {
+  @extend %picture-background;
+  background-image: url(../img/with-ds.jpg);
+  background-size: contain;
+}
+
+.impress-on-with-ds-layout {
+  @extend %picture-background;
+  background-image: url(../img/with-ds-layout.jpg);
+  background-size: contain;
+}
+
+.impress-on-ds-extras {
+  @extend %picture-background;
+  background-image: url(../img/ds-extras.jpg);
+  background-size: contain;
+}
+
+.impress-on-ds-extras-field {
+  @extend %picture-background;
+  background-image: url(../img/ds-extras-field.jpg);
+  background-size: contain;
 }
 
 
