@@ -48,7 +48,7 @@
   </article>
 
   <article id="css-guidelines" data-x="5500" data-y="2000" data-scale="1"  data-rotate="-90" class="step show-on-drupal-8-guidelines hide-on-final">
-    <h1 class="title centered">CSS Architecture Guidelines</h2>
+    <h1 class="title centered">CSS Architecture Guidelines</h1>
   </article>
 
   <article id="drupal-8-guidelines" data-x="5650" data-y="2000" data-scale="1"  data-rotate="-90" class="step hide-on-css-guidelines hide-on-final">
@@ -138,7 +138,7 @@
   </article>
 
   <article id="control-markup" data-x="7600" data-y="-500" data-scale="1"  data-rotate="-180" class="step hide-on-final">
-    <h1 class="title centered">Control Drupal’s Markup</h2>
+    <h1 class="title centered">Control Drupal’s Markup</h1>
   </article>
 
   <article id="control-markup-topics" data-x="7600" data-y="-1000" data-scale="1"  data-rotate="-180" class="step hide-on-control-markup hide-on-final">
@@ -282,13 +282,121 @@ $vars['attributes_array']['class'] = array(
     <h3 class="element-invisible">Display Suite Extras Field</h3>
   </article>
 
+  <article id="sass-organization" data-x="4500" data-y="-7000" data-scale="1"  data-rotate="-270" class="step hide-on-final">
+    <h1 class="title centered">Organize Your Sass</h1>
+  </article>
 
+  <article id="use-partials" data-x="3500" data-y="-7000" data-scale="1"  data-rotate="-270" class="step hide-on-final">
+    <h2 class="h1">Use Partials</h2>
+  </article>
 
+  <article id="partials-code" data-x="3200" data-y="-7000" data-scale="1"  data-rotate="-270" class="step show-on-partials-directory hide-on-use-partials hide-on-final">
+    <p>styles.scss</p>
+    <pre>@import 'partials/global';
+@import 'partials/base';
+@import 'partials/helper-classes';
+@import 'partials/layout';
+@import 'partials/components';
+@import 'partials/quick-fixes';</pre>
+  </article>
 
+  <article id="partials-directory" data-x="3200" data-y="-6800" data-scale="1"  data-rotate="-270" class="step hide-on-use-partials hide-on-partials-code hide-on-final">
+    <div style="padding-left:10em">
+      <pre>styles.scss
+partials/
+   _global.scss
+   _base.scss
+   _helper-classes.scss
+   _layout.scss
+   _components.scss
+   _quick-fixes.scss</pre>
+    </div>
+  </article>
 
+  <article id="partials-global" data-x="2200" data-y="-6800" data-scale="1"  data-rotate="-270" class="step show-on-global-details show-on-global-details-alt hide-on-final">
+    <h3>Global</h3>
+  </article>
 
+  <article id="global-details" data-x="2200" data-y="-6800" data-scale="1"  data-rotate="-270" class="step hide-on-partials-global hide-on-global-details-alt hide-on-partials-base hide-on-base-details hide-on-partials-helper-classes hide-on-partials-layout hide-on-partials-components hide-on-components-details hide-on-components-details-alt hide-on-partials-quick-fixes hide-on-final">
+    <div style="padding-left:8em">
+      <pre>partials/
+   _global.scss
+   global/
+      _variables.scss
+      _mixins.scss
+      _functions.scss
+      _extendables.scss</pre>
+    </div>
+  </article>
 
-  <article id="all" data-x="2000" data-y="-1000" data-scale="15" class="step"></article>
+  <article id="global-details-alt" data-x="2200" data-y="-6800" data-scale="1"  data-rotate="-270" class="step hide-on-partials-global hide-on-global-details hide-on-partials-base hide-on-base-details hide-on-partials-helper-classes hide-on-partials-layout hide-on-partials-components hide-on-components-details hide-on-components-details-alt hide-on-partials-quick-fixes hide-on-final">
+    <div style="padding-left:8em">
+      <pre>partials/
+   _global.scss
+   global/
+      variables/
+         _colors.scss
+      helpers/
+         _accessibility.scss</pre>
+    </div>
+  </article>
+
+  <article id="partials-base" data-x="2100" data-y="-6800" data-scale="1"  data-rotate="-270" class="step show-on-base-details hide-on-final">
+    <h3>Base</h3>
+  </article>
+
+  <article id="base-details" data-x="2100" data-y="-6800" data-scale="1"  data-rotate="-270" class="step hide-on-partials-global hide-on-global-details hide-on-global-details-alt hide-on-partials-base hide-on-partials-helper-classes hide-on-partials-layout hide-on-partials-components hide-on-components-details hide-on-components-details-alt hide-on-partials-quick-fixes hide-on-final">
+    <div style="padding-left:8em">
+      <pre>partials/
+   _base.scss
+   base/
+      _fonts.scss
+      _normalize.scss
+      _html-elements.scss</pre>
+    </div>
+  </article>
+
+  <article id="partials-helper-classes" data-x="2000" data-y="-6800" data-scale="1"  data-rotate="-270" class="step hide-on-final">
+    <h3>Helper Classes</h3>
+  </article>
+
+  <article id="partials-layout" data-x="1900" data-y="-6800" data-scale="1"  data-rotate="-270" class="step hide-on-final">
+    <h3>Layout</h3>
+  </article>
+
+  <article id="partials-components" data-x="1800" data-y="-6800" data-scale="1"  data-rotate="-270" class="step show-on-components-details show-on-components-details-alt hide-on-final">
+    <h3>Components</h3>
+  </article>
+
+  <article id="components-details" data-x="1800" data-y="-6800" data-scale="1"  data-rotate="-270" class="step hide-on-partials-global hide-on-global-details hide-on-global-details-alt hide-on-partials-base hide-on-base-details hide-on-partials-helper-classes hide-on-partials-layout hide-on-partials-components hide-on-components-details-alt hide-on-partials-quick-fixes hide-on-final">
+    <div style="padding-left:8em">
+      <pre>partials/
+   _components.scss
+   components/
+      _button.scss
+      _nav.scss
+      _pager.scss
+      _vertical-tabs.scss</pre>
+    </div>
+  </article>
+
+  <article id="components-details-alt" data-x="1800" data-y="-6800" data-scale="1"  data-rotate="-270" class="step hide-on-partials-global hide-on-global-details hide-on-global-details-alt hide-on-partials-base hide-on-base-details hide-on-partials-helper-classes hide-on-partials-layout hide-on-partials-components hide-on-components-details hide-on-partials-quick-fixes hide-on-final">
+    <div style="padding-left:8em">
+      <pre>partials/
+   _components.scss
+   components/
+      _nav.scss
+      nav/
+         _nav--pipeline.scss
+         _nav--main-menu.scss</pre>
+    </div>
+  </article>
+
+  <article id="partials-quick-fixes" data-x="1700" data-y="-6800" data-scale="1"  data-rotate="-270" class="step hide-on-final">
+    <h3>Quick Fixes</h3>
+  </article>
+
+  <!--<article id="all" data-x="2000" data-y="-1000" data-scale="15" class="step"></article>-->
 
   <article id="final" data-x="1400" data-y="500" data-scale="6" class="step"></article>
 
