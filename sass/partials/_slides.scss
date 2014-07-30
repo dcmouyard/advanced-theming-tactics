@@ -7,7 +7,7 @@
                 naming-states, markup-states, control-markup, template-files, template-variables-renders,
                 preprocess-functions, preprocess-function-names, attributes-array,
                 title-attributes-array, classes-array, render-array-attributes, theme-functions,
-                theme-breadcrumb, theme-feed-icon, new-theme, clean-markup-module, final {
+                theme-breadcrumb, theme-feed-icon, gesso, clean-markup-module, final {
   .impress-on-#{$slide} .show-on-#{$slide} {
     opacity: 1;
   }
